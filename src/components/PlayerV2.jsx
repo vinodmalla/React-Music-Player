@@ -71,6 +71,7 @@ const PlayerV2 = () => {
                />
                <div className={`w-[200px] h-[200px] absolute rounded-full top-[20px] left-0 border-[1px] border-gray-50 ${isPlaying ? 'animate-pulse' : ''}`}></div>
             </div>
+            <button><process  />{100}</button>
             <div className="w-full flex justify-between font-semibold">
                <p className='current-time'>{formatTime(currentTime)}</p>
                <p className='total-lenght'>{formatTime(totalDuration)}</p>
@@ -86,7 +87,7 @@ const PlayerV2 = () => {
                <ForwardIcon className="w-8 h-8 cursor-pointer" onClick={nextTrack}/>
             </div>
          </div>
-         <div className="change-bg w-[200px] h-8 bg-[#eee] text-[#222] text-center font-extralight pt-1 cursor-pointer absolute top-0 rounded-bl-xl rounded-br-xl z-[10]" onClick={handleChangeBackground}>
+         <div className=" bg-black w-[200px] h-8  text-[#222] text-center font-extralight pt-1 cursor-pointer absolute top-0 rounded-bl-xl rounded-br-xl z-[10]" onClick={handleChangeBackground}>
             Change Background
          </div>
          </>
